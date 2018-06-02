@@ -2,7 +2,12 @@ body {
   background-color: #ecebf3;
   color: #2f243a;
   font-family: 'Quicksand', sans-serif;
+}
 
+.light-background{
+  background-color: #ecebf3;
+  color: #2f243a;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .dark-background {
@@ -16,45 +21,19 @@ body {
   text-align: center;
 }
 
-h1.dark {
-  color: #d36135;
-  font-size: 40px;
-  font-family: 'Merienda One', cursive;
-}
-
-h1.dark:hover {
-  color: #7fdarkb069;
-}
-
-h2.dark {
-  color: #7fb069;
-  font-family: 'Merienda One', cursive;
-}
-
-h3.dark {
-  color: #e6aa68;
-  font-size: 30px;
-  font-family: 'Merienda One', cursive;
-}
-
-h1.light {
-  color: #db8a74;
-  font-size: 40px;
+h1 {
   font-family: 'Lily Script One', cursive;
 }
 
-h1.light:hover {
+h1.:hover {
   color: #ecebf3;
 }
 
-h2.light {
-  color: #444054;
+h2 {
   font-family: 'Lily Script One', cursive;
 }
 
-h3.light {
-  color: #db8a74;
-  font-size: 30px;
+h3 {
   font-family: 'Lily Script One', cursive;
 }
 

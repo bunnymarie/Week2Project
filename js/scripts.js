@@ -1,25 +1,16 @@
 $(document).ready(function(){
   $("button#light").click(function() {
     $("body").removeClass();
-    $("body").addClass("body");
-    $("h1").removeClass();
-    $("h1").addClass("h1 light");
-    $("h2").removeClass();
-    $("h2").addClass("h2 light");
-    $("h3").removeClass();
-    $("h3").addClass("h3 light");
+    $("body").addClass("light-background");
   });
+
   $("button#dark").click(function() {
     $("body").removeClass();
     $("body").addClass("dark-background");
-    $("h1").removeClass();
-    $("h1").addClass("h1 dark");
-    $("h2").removeClass();
-    $("h2").addClass("h2 dark");
-    $("h3").removeClass();
-    $("h3").addClass("h3 dark");
   });
+
   $("#quiz").submit(function(event){
+    var name = $("input#nameInput").val();
     var one = parseInt($("input:radio[name=oneChoice]:checked").val());
     var two = parseInt($("input:radio[name=twoChoice]:checked").val());
     var three = parseInt($("input:radio[name=threeChoice]:checked").val());
@@ -27,7 +18,8 @@ $(document).ready(function(){
     var five = parseInt($("input:radio[name=fiveChoice]:checked").val());
     var result = one + two + three + four + five;
     debugger;
-    if (result <= 25 || result === 0) {
+      $(".nameConfirm").text(name);
+    if (result <= 25) {
       $("#ones-showing").show()
       $("#twos-showing").hide()
       $("#threes-showing").hide()
@@ -48,7 +40,6 @@ $(document).ready(function(){
       $("#threes-showing").hide()
       $("#ones-showing").hide()
     }
-
     event.preventDefault();
   });
 });
