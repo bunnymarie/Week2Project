@@ -1,4 +1,75 @@
+body {
+  background-color: #ecebf3;
+  color: #2f243a;
+  font-family: 'Quicksand', sans-serif;
 
+}
+
+.dark-background {
+  background-color: #111111;
+  color: #ece4b7;
+  font-family: 'Arsenal', sans-serif;
+}
+
+.jumbotron {
+  background-color: rgba(236, 228, 183,0.4);
+  text-align: center;
+}
+
+h1.dark {
+  color: #d36135;
+  font-size: 40px;
+  font-family: 'Merienda One', cursive;
+}
+
+h1.dark:hover {
+  color: #7fdarkb069;
+}
+
+h2.dark {
+  color: #7fb069;
+  font-family: 'Merienda One', cursive;
+}
+
+h3.dark {
+  color: #e6aa68;
+  font-size: 30px;
+  font-family: 'Merienda One', cursive;
+}
+
+h1.light {
+  color: #db8a74;
+  font-size: 40px;
+  font-family: 'Lily Script One', cursive;
+}
+
+h1.light:hover {
+  color: #ecebf3;
+}
+
+h2.light {
+  color: #444054;
+  font-family: 'Lily Script One', cursive;
+}
+
+h3.light {
+  color: #db8a74;
+  font-size: 30px;
+  font-family: 'Lily Script One', cursive;
+}
+
+.col-sidebar {
+  float: left;
+  padding: 0px 50px 25px 50px;
+}
+.col-quiz {
+  float: right;
+  padding: 0px 50px 25px 50px;
+}
+.col-results {
+  float: right;
+  padding: 25px 25px 25px 25px;
+}
 #ones-showing {
   display: none;
 }
